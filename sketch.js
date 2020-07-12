@@ -255,6 +255,9 @@ function draw() {
       if(frameCount >4000){
         fast.play();
       }
+      //camera
+          camera.position.x = player.x;
+          camera.position.y = player.y;
 
       //making player collide with edges
       player.collide(edges[3]);
